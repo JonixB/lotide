@@ -5,6 +5,3 @@ const assertEqual = function(actual, expected) {
     console.log(`${String.fromCodePoint(0x274C)} Assertion Failed: ${actual} !== ${expected} ${String.fromCodePoint(0x274C)}`);
   }
 };
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
