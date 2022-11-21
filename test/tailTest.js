@@ -1,8 +1,18 @@
 const tail = require('../tail');
-const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-// console.log(tail(words)); // no need to capture the return value since we are not checking it
-// assertEqual(tail(words), 'Labs');
 
-console.log(eqArrays(tail(words), ['Lighthouse', 'Labs']));
+describe("#tail", () => {
+  it("returns [2, 3] for [1, 2, 3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
+
+  it("returns ['Lighthouse', 'Labs'] for ['Yo Yo', Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(words), ['Lighthouse', 'Labs']);
+  });
+
+  it("returns [] for ['Lighthouse']", () => {
+    assert.deepEqual(tail(['Lighthouse']), []);
+  });
+});
