@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@jonixb/lotide",
+  "version": "1.0.1",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library. This project was created and published by me as part of my learnings at Lighthouse Labs.",
   "main": "assertArrayEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/JonixB/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nikko Bansil <bjohnnikko@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JonixB/lotide/issues"
